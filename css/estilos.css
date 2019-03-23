@@ -1,0 +1,319 @@
+@import url(https://fonts.googleapis.com/css?family=UnifrakturCook:700);
+
+@font-face {
+    font-family: texto_regular;
+    /*    src: url('LibreBaskerville-Regular.otf');*/
+    src: url('fonts/texgyrebonum-regular.otf');
+}
+
+@font-face {
+    font-family: capital;
+    src: url('fonts/NeugotischeInitialen.ttf');
+}
+
+@font-face {
+    font-family: titulos;
+    src: url('fonts/OldEnglishFive.ttf');
+}
+
+html {
+    background-image: url(img/noise.png);
+    background-color: #F8ECC2;
+    height: 100%;
+}
+
+/* saque el linear gradient ya que era muy lento */
+/* body {
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 7.5%), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 2.5%), url(img/noise.png);
+    background-color: #F8ECC2;
+    height: 100%;
+} */
+
+h1 {
+    font-size: 2.2652rem;
+    font-family: "titulos";
+    color: darkblue;
+    margin: 1.618rem 0 1.618rem 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 1.618rem;
+    font-family: "titulos";
+    color: darkblue;
+    margin-bottom: 1.618rem;
+}
+
+#site_title {
+    font-size: 2.2652rem;
+    font-family: "Josefin Sans";
+    color: gold;
+    text-align: center;
+    padding: 1.618rem;
+    background-color: purple;
+}
+
+article {
+    margin: auto;
+    width: 70ch;
+
+}
+
+p,
+ul {
+    font-size: 1.4rem;
+    font-family: "texto_regular";
+    line-height: 2.2652rem;
+    /* line-height = font size *1.618  */
+    color: black;
+    text-align: justify;
+    margin-bottom: 2.2652rem;
+}
+
+p:first-letter {
+    font-size: 4rem;
+    font-family: 'capital';
+    float: left;
+    color: #da121a;
+    padding: 0.4em 0 0 0;
+    display: block;
+}
+
+p>a {
+
+    font-family: "texto_regular";
+    color: purple;
+    text-decoration: underline;
+    text-decoration-color: gold;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+
+a:hover {
+    color: red;
+    background-color: darkred
+}
+
+.post_separator {
+    font-size: 1.618rem;
+    text-align: center;
+    font-family: "titulos";
+    margin: 1.618rem;
+}
+
+.author {
+    font-size: 1.2rem;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: red;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+
+nav {
+    color: purple;
+    padding: 1.618rem;
+    margin: auto;
+    width: 70ch;
+}
+
+nav>ul>li:not(:first-child)::after {
+    content: '|';
+}
+
+nav>ul {
+    display: flex;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-family: "Josefin Sans";
+    flex-flow: row;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+#tags {
+    font-family: "Josefin Sans";
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+#tags>a {
+    color: purple;
+    text-decoration: underline;
+    text-decoration-color: gold;
+}
+
+#tags>a:hover {
+    color: goldenrod;
+    background-color: gold;
+}
+
+#top_bar {
+    height: 100px;
+    background-color: red;
+}
+
+/* img {
+  border-radius: 0.2em;
+  box-shadow: 0em 0em 0.2rem;
+  max-width: 35ch;
+  max-height: 35ch;
+  float: right;
+  margin: 1.618rem 0 1.618rem 1.618rem */
+/* } */
+img {
+    /* border-radius: 0.2em; */
+    /* box-shadow: 0em 0em 0.2rem; */
+    border: 0.809rem solid rgb(235, 235, 235);
+    max-width: 35ch;
+    max-height: 35ch;
+    float: right;
+    margin: 0.809rem 0 0.809rem 0.809rem
+}
+
+.read_more {
+    text-align: right
+}
+
+#footer {
+    font-size: 0.809rem;
+    font-family: "Josefin Sans";
+    color: purple;
+    margin: 0.809;
+    text-align: center;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    padding: 0 2em 0 2em;
+    font-family: texto_regular;
+}
+
+th {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.4));
+    padding: 0.5em;
+}
+
+td {
+    font-size: 1em;
+}
+
+
+.boton:hover {
+    color: red;
+}
+
+.boton {
+    text-align: center;
+    display: inline-block;
+    color: black;
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#bottom {
+    margin: auto;
+    text-align: center;
+    /* position: fixed; */
+    bottom: 0;
+    /* width: 100%; */
+    height: 2em;
+    margin-top: 1em;
+    padding: 1em;
+}
+
+.feel_stronger {
+    background-color: #da121a;
+    color: #fcd009;
+    font-weight: bold;
+    border-radius: 0.2em;
+}
+
+.feel_stronger::after {
+    content: " up!";
+    font-size: 0.6em;
+    vertical-align: text-top;
+}
+
+.tier1 {
+    background-color: #ffffff;
+    color: #b3b3b3;
+    font-weight: bold;
+    border-radius: 0.2em;
+}
+
+.tier2 {
+    background-color: #00a368;
+    color: #00551c;
+    font-weight: bold;
+    border-radius: 0.2em;
+}
+
+.tier3 {
+    background-color: #ffd300;
+    color: #b38700;
+    font-weight: bold;
+    border-radius: 0.2em;
+}
+
+.seguir_leyendo {
+    font-family: "texto_regular";
+    text-align: right;
+    font-size: 1.4rem;
+}
+
+
+#title {
+    /*color: gold;*/
+    color: #fcd009;
+    font-family: 'UnifrakturCook';
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: 1px 1px 4px #000;
+    margin: 1.618rem;
+}
+
+#cover #title,
+#cover #sub_title {
+    /*color: gold;*/
+    color: #fcd009;
+    font-family: 'UnifrakturCook';
+    font-size: 4em;
+    max-width: 40vw;
+    margin: auto;
+}
+
+#cover #title {
+    text-shadow: 1px 1px 4px #000;
+}
+
+#cover #sub_title {
+    font-size: 1em;
+    max-width: 20vw;
+    text-shadow: 1px 1px 4px #000;
+}
+
+#cover {
+    border: 0.2em solid #fcd009;
+    /*gold;*/
+    box-shadow: 1px 1px 4px #000;
+    border-radius: 0.4em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4em;
+    text-align: center;
+}
+
+#book {
+    background-color: darkred;
+    height: 100vh;
+}
