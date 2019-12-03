@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=UnifrakturCook:700);
-
-@font-face {
-    font-family: texto_regular;
-    /*    src: url('LibreBaskerville-Regular.otf');*/
-    src: url('fonts/texgyrebonum-regular.otf');
-}
+@import url('https://fonts.googleapis.com/css?family=Solway:300,700&display=swap');
 
 @font-face {
     font-family: capital;
@@ -22,13 +17,6 @@ html {
     height: 100%;
 }
 
-/* saque el linear gradient ya que era muy lento */
-/* body {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 7.5%), linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) 2.5%), url(img/noise.png);
-    background-color: #F8ECC2;
-    height: 100%;
-} */
-
 h1 {
     font-size: 2.2652rem;
     font-family: "titulos";
@@ -43,6 +31,8 @@ h2 {
     font-family: "titulos";
     color: darkblue;
     margin-bottom: 1.618rem;
+    text-align: center;
+    text-transform: capitalize;
 }
 
 #site_title {
@@ -63,8 +53,9 @@ article {
 p,
 ul {
     font-size: 1.4rem;
-    font-family: "texto_regular";
+    font-family: "Solway";
     line-height: 2.2652rem;
+    font-weight: 300;
     /* line-height = font size *1.618  */
     color: black;
     text-align: justify;
@@ -82,7 +73,7 @@ p:first-letter {
 
 p>a {
 
-    font-family: "texto_regular";
+    font-family: "Solway";
     color: purple;
     text-decoration: underline;
     text-decoration-color: gold;
@@ -193,16 +184,17 @@ table {
     margin: auto;
     text-align: center;
     padding: 0 2em 0 2em;
-    font-family: texto_regular;
+    font-family: Solway;
 }
 
 th {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.4));
     padding: 0.5em;
+    font-size: 1.4rem;
 }
 
 td {
-    font-size: 1em;
+    font-size: 1.2rem;
 }
 
 
@@ -264,8 +256,9 @@ td {
 }
 
 .seguir_leyendo {
-    font-family: "texto_regular";
+    font-family: "Solway";
     text-align: right;
+    font-weight: light;
     font-size: 1.4rem;
 }
 
